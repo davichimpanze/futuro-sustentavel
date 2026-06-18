@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo geral com tema sustentável */
+body {
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    color: #1b5e20;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navegação */
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    background-color: #66bb6a;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav button:hover {
+    background-color: #43a047;
+    transform: scale(1.05);
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Lista de dicas */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1b5e20;
+    color: white;
+    margin-top: auto;
+}
+
+/* Classe usada pelo JS */
+.escondido {
+    display: none;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
